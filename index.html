@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body >
+    <style>
+        body {
+        font-family: "Poppins", serif;
+        font-style: normal;      
+    }
+    
+        @media screen and (min-width:900px) {
+            #navmenu{
+                display: none;
+            }
+            #navmenu2{
+                gap: 3px;
+            }
+        }
+        @media screen and (max-width:900px) {
+            #navmenu2{
+                display: none;
+            }
+        }
+    
+    #slider{
+        overflow: hidden;
+        position: relative;
+        border: 5px;
+       
+        
+    }
+    #slide-content{
+        position: absolute;
+        z-index: 2;
+        left: 15%;
+    }
+    @media screen and (min-width:450px) {
+            #slider-img-cont img{
+                height: 100%;
+                padding-top: 20px;
+            }
+    }
+    @media screen and (min-width:560px) {
+            #slider-img-cont{
+                height: 350px;
+            }
+    }
+    @media screen and (min-width:560px) {
+            #slider-img-cont img{
+                height: 80%;
+            }
+    }
+    @media screen and (min-width:768px) {
+            #slider-img-cont img{
+                height: 80%;
+                
+            }
+    }
+  
+    @media screen and (min-width:768px) {
+            #slider-img-cont{
+                height: 350px;
+            }
+            #slider{
+                height: 300px;
+                margin-top: 20px;
+            }
+    }
+    @media screen and (min-width:840px) {
+            #slider-img-cont{
+                height: 500px;
+            }
+            #slider{
+                height: 450px;
+                
+            }
+    }
+    @media screen and (min-width:1250px) {
+            #slider-img-cont{
+                height: 600px;
+            }
+            #slider-img-cont img{
+                height: 90%;
+                
+            }
+            #slider{
+                height: 600px;
+                
+            }
+    }
+  
+
+    </style>
+    <!-- offernav -->
+     <nav class="text-center bg-black" style="padding: 5px;">
+        <p class="text-[1.5vw]" style="color:#FFFFFF">Sign Up and <b class="font-extrabold">GET 20% OFF</b> for your first order<i class="fa-solid fa-xmark" style="color: #ffffff; margin-left: 10%; cursor: pointer;"></i></p>
+        
+     </nav>
+     <!-- responsivenav -->
+    <nav id="navbar" class="flex flex-row items-center justify-between py-2 px-5 bg-whitesticky z-50 top-0 md:py-2.5 lg:py-4">
+        <h1 class="text-2xl" style ="font-weight:700">Nostra</h1>
+        <i id="navmenu" class="fa-solid fa-bars" style="color: #000000;"></i>
+        <div id="navmenu2" class="flex flex-row w-2/4 justify-around ">
+            <p class="hover:underline cursor-pointer">Home</p> 
+            <p class="hover:underline cursor-pointer">New Arrival</p>
+            <p class="hover:underline cursor-pointer">Most Wanted</p>
+            <p class="hover:underline cursor-pointer">Collections</p>
+            <p class="hover:underline cursor-pointer">Contact Us</p>
+        </div>
+    </nav>
+    <!-- imagebanner -->
+     <section id="slider"class="flex items-center text-center text-white mx-1 h-70">
+        <div class="absolute flex start-2 md:start-5 lg:start-10">
+            <i class="fa-solid fa-angle-left text-[6vw] md:text-[6vw] lg:text-[6vw]"></i>
+        </div>
+        <div id="slide-content">
+            <h1 class="text-[5vw] font-extrabold opacity-100">Level up your style with our</h1>
+            <h1 class="text-lg font-bold opacity-100">Summer Collections</h1>
+            <button class="text-sm opacity-100 bg-white text-black p-1.5 mt-2">Shop Now<i class="fa-solid fa-arrow-right" style="color: #000000; padding-left: 3px;"></i></button>
+        </div>
+        <div id="slider-img-cont" class="flex flex-row">
+            <img src="/img/slide1.jpg" style="width: 100%;" >
+            <img src="/img/slide2.jpg" style="width: 100%;">
+            <img src="/img/slide3.jpg" style="width: 100%;">
+            <img src="/img/slide1.jpg" style="width: 100%;">
+            <img src="/img/slide2.jpg" style="width: 100%;">
+            <img src="/img/slide3.jpg" style="width: 100%;">
+        </div>
+        <div class="absolute flex end-2 z-20 md:end-5 lg:end-10">
+            <i class="fa-solid fa-angle-right text-[6vw] md:text-[6vw] lg:text-[6vw]"></i>
+        </div>
+     </section>
+     
+</body>
+</html>
